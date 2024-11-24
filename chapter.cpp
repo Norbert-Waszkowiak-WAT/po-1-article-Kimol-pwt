@@ -16,7 +16,7 @@ class Chapter{
         Chapter(std::string chapterTitle, Author chapterAuthor, int number)
         : title(chapterTitle), author(chapterAuthor), chapterNumber(number){};
 
-        Chapter(Chapter &other)
+        Chapter(const Chapter &other)
         : title(other.title), author(other.author), chapterNumber(other.chapterNumber){};
 
         Chapter(Article &article)
