@@ -7,7 +7,8 @@ private:
     std::string name;
     std::string surname;
 public:
-    
+    Author()
+    : name(""), surname("") {};
 
     Author(std::string name, std::string surname)
     : name(name), surname(surname) {};
