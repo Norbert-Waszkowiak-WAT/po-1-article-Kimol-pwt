@@ -22,17 +22,10 @@ private:
 public:
 
     Book()
-    : title(""),
-author(Author()),
-publicationYear(0),
-chapters({}) {};
+    : title(""), author(Author()), publicationYear(0), chapters({}) {};
 
-    Book(const string bookTitle,const Author &bookAuthor,
-int year,  const vector<Chapter>&bookChapters)
-    : title(bookTitle),
-author(bookAuthor),
-publicationYear(year),
-chapters(bookChapters) {};
+    Book(const string bookTitle,const Author &bookAuthor, int year,  const vector<Chapter>&bookChapters)
+    : title(bookTitle), author(bookAuthor), publicationYear(year), chapters(bookChapters) {};
 
     void addChapter(const Chapter &chapter)
     {
@@ -54,8 +47,7 @@ chapters(bookChapters) {};
         return publicationYear;
     };
 
-    vector<Chapter>
-    getChapters()
+    vector<Chapter> getChapters()
     {
         return chapters;
     };
